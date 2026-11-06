@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="Ömer Faruk Aktaş — EndiKedi. Kod, üretim ve dijital deneyler.">
+  <title>EndiKedi — Dijital Alan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Animasyonlar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"></script>
+
+  <!-- Akıcı kaydırma -->
+  <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+</head>
+
+<body>
+
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span>EndiKedi<span>.</span></span>
+    </a>
+
+    <nav class="navigation">
+      <a href="#home">Ana sayfa</a>
+      <a href="#about">Hakkımda</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+
+    <div class="header-right">
+      <span class="availability">
+        <span class="status-dot"></span>
+        <span>Bir şeyler üretiyor</span>
+      </span>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+        <span id="themeIcon">◐</span>
+      </button>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- KARŞILAMA -->
+    <section class="hero" id="home">
+
+      <div class="hero-topline">
+        <span>KİŞİSEL DİJİTAL ALAN</span>
+        <span>40°01' N / 28°24' E</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-label">
+            <span class="label-line"></span>
+            <span>Merhaba, ben Ömer Faruk.</span>
+          </div>
+
+          <h1>
+            Sadece<br>
+            üretmeyi seven<br>
+            <span class="outline-text">biriyim<span class="accent">.</span></span>
+          </h1>
+
+          <p class="hero-description">
+            Kod yazıyorum, fikirleri kurcalıyorum ve aklıma takılan
+            şeyleri gerçeğe dönüştürmeye çalışıyorum.
+            Burası da bunların küçük bir özeti.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#about" class="primary-button">
+              Biraz daha tanışalım <span>↗</span>
+            </a>
+
+            <a href="https://github.com/EndiKedii"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="secondary-button">
+              GitHub <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-a"></div>
+          <div class="visual-orbit orbit-b"></div>
+          <div class="visual-orbit orbit-c"></div>
+
+          <div class="visual-core">
+            <span>EK</span>
+          </div>
+
+          <div class="floating-card card-top">
+            <span class="mini-dot"></span>
+            <span>YARATICI ZİHİN</span>
+          </div>
+
+          <div class="floating-card card-bottom">
+            <span class="mono">ŞU SIRALAR</span>
+            <strong>Fikirler üzerinde çalışıyor.</strong>
+          </div>
+
+          <span class="visual-coordinate">001 / KİŞİSEL</span>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>KEŞFETMEK İÇİN KAYDIR</span>
+        <div class="scroll-line"><span></span></div>
+        <span>© 2026</span>
+      </div>
+
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section class="intro-section" id="about">
+
+      <div class="section-index">
+        <span>01</span>
+        <span>HAKKIMDA</span>
+      </div>
+
+      <div class="intro-content">
+        <h2>
+          İnternette bir köşem,<br>
+          gerçek hayatta <span class="muted-text">bir sürü</span><br>
+          <span class="accent-text">merakım var.</span>
+        </h2>
+
+        <div class="intro-bottom">
+          <div class="intro-small">
+            <span class="vertical-line"></span>
+            <span>EKRANIN ARKASINDAKİ KİŞİ</span>
+          </div>
+
+          <div class="intro-description">
+            <p>
+              Ben Ömer Faruk. İnternette çoğunlukla EndiKedi
+              ismini kullanıyorum.
+            </p>
+
+            <p>
+              Yazılım benim için yalnızca kod yazmak değil.
+              Bir fikrin nasıl çalışacağını düşünmek, denemek,
+              bazen her şeyi bozup yeniden yapmak.
+            </p>
+
+            <p>
+              Minecraft geliştirme, web teknolojileri ve
+              dijital üretimle ilgileniyorum. Öğrenecek çok
+              şey, denenecek daha fazla fikir var.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KİŞİSEL NOT -->
+    <section class="note-section">
+      <div class="note-inner">
+        <span class="mono">KÜÇÜK BİR HATIRLATMA / 001</span>
+
+        <h2>
+          Her şeyin<br>
+          <span>kusursuz olması gerekmez.</span>
+        </h2>
+
+        <p>Bazen tek yapman gereken başlamaktır.</p>
+
+        <span class="note-decoration">✳</span>
+      </div>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section class="youtube-section" id="youtube">
+
+      <div class="section-index">
+        <span>02</span>
+        <span>YOUTUBE KÖŞEM</span>
+      </div>
+
+      <div class="youtube-heading">
+        <div>
+          <span class="eyebrow">BENİM DİĞER TARAFIM</span>
+          <h2>Biraz da<br><span>ekrandan.</span></h2>
+        </div>
+
+        <p>
+          Oyunlar, videolar ve bazen sadece eğlenmek için
+          ürettiğim içerikler. YouTube tarafında görüşürüz.
+        </p>
+      </div>
+
+      <div class="youtube-card">
+
+        <div class="youtube-preview" id="youtubePreview">
+          <div class="youtube-placeholder">
+            <span class="play-icon">▶</span>
+            <span class="mono">SON VİDEO</span>
+          </div>
+        </div>
+
+        <div class="youtube-info">
+          <div class="youtube-profile">
+            <div class="channel-avatar">EK</div>
+
+            <div>
+              <h3>EndiKedii</h3>
+              <span>@EndiKedii</span>
+            </div>
+          </div>
+
+          <p>
+            Minecraft, oyunlar ve kendi küçük internet maceralarım.
+          </p>
+
+          <a href="https://youtube.com/@endikedi"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="youtube-button">
+            Kanalı ziyaret et <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="youtube-bottom">
+        <span class="mono">YOUTUBE / ENDİKEDİİ</span>
+        <a href="https://youtube.com/@endikedi"
+           target="_blank"
+           rel="noopener noreferrer">youtube.com/@endikedi ↗</a>
+      </div>
+
+    </section>
+
+    <!-- ŞU SIRALAR -->
+    <section class="currently-section">
+
+      <div class="section-index">
+        <span>03</span>
+        <span>ŞU SIRALAR</span>
+      </div>
+
+      <div class="currently-content">
+        <h2>Şu sıralar<br><span>kafamda.</span></h2>
+
+        <div class="currently-list">
+          <div class="currently-item">
+            <span class="item-number">01</span>
+            <div>
+              <h3>Web Geliştirme</h3>
+              <p>Yeni arayüzler ve web deneyimleri.</p>
+            </div>
+            <span class="item-arrow">↗</span>
+          </div>
+
+          <div class="currently-item">
+            <span class="item-number">02</span>
+            <div>
+              <h3>Minecraft Geliştirme</h3>
+              <p>Eklentiler, sistemler ve oyun fikirleri.</p>
+            </div>
+            <span class="item-arrow">↗</span>
+          </div>
+
+          <div class="currently-item">
+            <span class="item-number">03</span>
+            <div>
+              <h3>Yaratıcı Deneyler</h3>
+              <p>Yeni şeyler öğrenmek ve denemek.</p>
+            </div>
+            <span class="item-arrow">↗</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="contact-section" id="contact">
+
+      <div class="contact-card">
+        <span class="mono">04 / İLETİŞİME GEÇ</span>
+
+        <h2>
+          Bir fikrin mi var?<br>
+          <span>Konuşalım.</span>
+        </h2>
+
+        <p>
+          Bir fikrin, önerin veya sadece söyleyecek
+          bir şeyin varsa kapım açık.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://github.com/EndiKedii"
+             target="_blank" rel="noopener noreferrer">
+            GitHub <span>↗</span>
+          </a>
+
+          <a href="https://youtube.com/@endikedi"
+             target="_blank" rel="noopener noreferrer">
+            YouTube <span>↗</span>
+          </a>
+
+          <a href="https://discord.gg/notamc.tr"
+             target="_blank" rel="noopener noreferrer">
+            Discord <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-decoration">e.</div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">
+      <span class="logo-symbol">e</span>
+      <span>EndiKedi<span class="logo-dot">.</span></span>
+    </a>
+
+    <span class="footer-middle">MERAKLA ÜRETİLDİ.</span>
+
+    <a href="#home" class="back-top">YUKARI ÇIK ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
